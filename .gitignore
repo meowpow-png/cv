@@ -1,0 +1,19 @@
+node_modules/
+dist/
+
+# IntelliJ IDEA
+.idea/*
+
+# Obsidian value
+.obsidian/
+
+# Local environment files
+.env
+.env.*
+
+# MCP
+.playwright-mcp/
+
+# AI
+.codex/
+.claude/
