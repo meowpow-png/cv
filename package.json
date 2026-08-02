@@ -4,7 +4,18 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:eslint": "eslint .",
+    "lint:stylelint": "stylelint \"**/*.css\" --allow-empty-input",
+    "lint": "run-s --continue-on-error lint:eslint lint:stylelint",
+    "lint:fix:eslint": "eslint . --fix",
+    "lint:fix:stylelint": "stylelint \"**/*.css\" --allow-empty-input --fix",
+    "lint:fix": "run-s --continue-on-error lint:fix:eslint lint:fix:stylelint",
+    "typecheck": "tsc --noEmit",
+    "knip": "knip",
+    "qualitycheck": "run-s --continue-on-error format:check lint typecheck build knip"
   },
   "dependencies": {
     "react": "^19.2.8",
