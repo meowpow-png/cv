@@ -19,6 +19,15 @@ services:
     stdin_open: true
     tty: true
 
+  playwright:
+    build:
+      context: .
+      dockerfile: docker/playwright/Dockerfile
+    volumes:
+      - .:/workspace:z
+    stdin_open: true
+    tty: true
+
 volumes:
   codex-home:
   claude-home:
