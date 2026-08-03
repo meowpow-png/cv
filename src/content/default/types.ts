@@ -17,16 +17,10 @@ export interface SkillsContent {
   concepts: string[]
 }
 
-export interface ProjectLink {
-  label: string
-  href: string
-}
-
 export interface ProjectFrontmatter {
   title: string
-  repo: ProjectLink
+  repo: string
   stack: string[]
-  link: ProjectLink
 }
 
 export interface EducationContent {
