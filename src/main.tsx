@@ -10,9 +10,9 @@ import { cssPath as interestsCssPath } from '@/sections/Interests'
 import { cssPath as profileCssPath } from '@/sections/Profile'
 import { cssPath as projectsCssPath } from '@/sections/Projects'
 import { cssPath as skillsCssPath } from '@/sections/Skills'
-import { cssPath as arrowLinkCssPath } from '@/shared/ArrowLink'
-import { cssPath as iconsCssPath } from '@/shared/components'
-import { cssPath as sectionHeadingCssPath } from '@/shared/SectionHeading'
+import { cssPath as arrowLinkCssPath } from '@/shared/components/ArrowLink'
+import { cssPath as iconsCssPath } from '@/shared/components/Icons'
+import { cssPath as sectionHeadingCssPath } from '@/shared/components/SectionHeading'
 
 const tokensCssPath = 'src/shared/tokens.css'
 

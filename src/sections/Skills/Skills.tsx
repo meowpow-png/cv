@@ -1,5 +1,5 @@
 import { skills } from '@/content/default'
-import { SectionHeading } from '@/shared/SectionHeading'
+import { SectionHeading } from '@/shared/components/SectionHeading'
 
 const columns = [
   { label: 'Languages', items: skills.languages },

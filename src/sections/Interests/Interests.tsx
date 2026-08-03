@@ -1,5 +1,5 @@
 import { interests } from '@/content/default'
-import { SectionHeading } from '@/shared/SectionHeading'
+import { SectionHeading } from '@/shared/components/SectionHeading'
 
 export function Interests() {
   return (

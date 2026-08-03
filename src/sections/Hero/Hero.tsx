@@ -1,5 +1,5 @@
 import { hero } from '@/content/default'
-import { GitHub, Mail, MapPin, Terminal } from '@/shared/components'
+import { GitHub, Mail, MapPin, Terminal } from '@/shared/components/Icons'
 
 import { type ComponentType } from 'react'
 

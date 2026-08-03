@@ -1,6 +1,6 @@
 import { projects } from '@/content/default'
-import { ArrowLink } from '@/shared/ArrowLink'
-import { SectionHeading } from '@/shared/SectionHeading'
+import { ArrowLink } from '@/shared/components/ArrowLink'
+import { SectionHeading } from '@/shared/components/SectionHeading'
 
 export function Projects() {
   return (

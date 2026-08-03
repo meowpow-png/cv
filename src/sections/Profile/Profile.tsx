@@ -1,5 +1,5 @@
 import { profile as ProfileContent } from '@/content/default'
-import { SectionHeading } from '@/shared/SectionHeading'
+import { SectionHeading } from '@/shared/components/SectionHeading'
 
 export function Profile() {
   return (
