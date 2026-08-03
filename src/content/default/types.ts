@@ -39,3 +39,8 @@ export interface EducationContent {
 export interface InterestsContent {
   items: string[]
 }
+
+export interface FooterContent {
+  prompt: string
+  tagline: string
+}

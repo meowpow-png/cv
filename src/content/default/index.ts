@@ -6,6 +6,7 @@ import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
 import {
   type EducationContent,
+  type FooterContent,
   type HeroContent,
   type InterestsContent,
   type ProjectFrontmatter,
@@ -30,6 +31,7 @@ export const education = readContent('src/content/default/education.mdx')
   .frontmatter as EducationContent
 export const interests = readContent('src/content/default/interests.mdx')
   .frontmatter as InterestsContent
+export const footer = readContent('src/content/default/footer.mdx').frontmatter as FooterContent
 
 const projectSlugs = ['focusd', 'ledgerly', 'bookrest']
 
