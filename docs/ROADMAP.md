@@ -32,10 +32,9 @@ Match visual design to mockup so the CV looks the way it's meant to.
 Make sure what renders on screen is exactly what shows up on paper.
 
 - [x] Get the CV rendering to HTML and printing to PDF end to end
-- [ ] Check that page breaks land in sensible places
-- [ ] Confirm margins and page size match a standard printable format
+- [ ] Confirm margins and page size match standard printable format
 - [ ] Set the document's title and author details
-- [ ] Compare the rendered result against the design mockup, section by section
+- [ ] Compare rendered result against design mockup
 
 ### Documentation
 
