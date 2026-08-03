@@ -14,7 +14,7 @@
 
 .hero-title {
   margin: 2rem 0 0;
-  font-family: var(--font-mono), monospace;
+  font-family: var(--font-sans), sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -28,7 +28,7 @@
   margin: 1rem 0 0;
   padding: 0;
   list-style: none;
-  font-family: var(--font-mono), monospace;
+  font-family: var(--font-sans), sans-serif;
   font-size: 0.85rem;
 }
 

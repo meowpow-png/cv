@@ -20,6 +20,8 @@ const fontFiles = [
   'playfair-display-700.woff2',
   'jetbrains-mono-400.woff2',
   'jetbrains-mono-700.woff2',
+  'ibm-plex-sans-400.woff2',
+  'ibm-plex-sans-700.woff2',
 ]
 
 const cssPaths = [

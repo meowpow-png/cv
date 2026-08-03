@@ -2,7 +2,7 @@ body {
   margin: 0;
   background: var(--color-bg);
   color: var(--color-fg);
-  font-family: var(--font-mono), monospace;
+  font-family: var(--font-sans), sans-serif;
 }
 
 .app-content {
