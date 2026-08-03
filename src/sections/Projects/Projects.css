@@ -1,4 +1,7 @@
 .projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -9,16 +12,28 @@
   gap: 1rem;
 }
 
-.projects-item-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+.projects-item-marker {
+  flex-shrink: 0;
+  width: 2px;
+  background: var(--color-accent);
 }
 
 .projects-item-title {
   margin: 0;
+  font-family: var(--font-serif), serif;
+  font-weight: 700;
+}
+
+.projects-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
 
 .projects-item-stack {
-  margin: 0.5rem 0;
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-muted);
 }

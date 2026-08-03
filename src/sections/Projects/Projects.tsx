@@ -7,17 +7,16 @@ export function Projects() {
     <section className="projects">
       <SectionHeading name="projects" />
       <ol className="projects-list">
-        {projects.map(({ frontmatter, Description }, index) => (
+        {projects.map(({ frontmatter, Description }) => (
           <li key={frontmatter.title} className="projects-item">
-            <span className="projects-item-index">{String(index + 1).padStart(2, '0')}</span>
+            <span className="projects-item-marker" />
             <div className="projects-item-body">
-              <div className="projects-item-header">
-                <h3 className="projects-item-title">{frontmatter.title}</h3>
-                <ArrowLink href={frontmatter.repo.href} label={frontmatter.repo.label} />
-              </div>
+              <h3 className="projects-item-title">{frontmatter.title}</h3>
               <Description />
-              <p className="projects-item-stack">{frontmatter.stack.join(' · ')}</p>
-              <ArrowLink href={frontmatter.link.href} label={frontmatter.link.label} />
+              <div className="projects-item-footer">
+                <p className="projects-item-stack">{frontmatter.stack.join(' · ')}</p>
+                <ArrowLink href={frontmatter.repo} label="Github" />
+              </div>
             </div>
           </li>
         ))}
