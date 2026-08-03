@@ -13,7 +13,7 @@
 }
 
 .hero-title {
-  margin: 2rem 0 0;
+  margin: 1.5rem 0 0 0;
   font-family: var(--font-sans), sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
@@ -23,9 +23,9 @@
 
 .hero-links {
   display: flex;
+  margin: 0;
   flex-wrap: wrap;
-  gap: 0.5rem 2.5rem;
-  margin: 1rem 0 0;
+  gap: 0.5rem 1.8rem;
   padding: 0;
   list-style: none;
   font-family: var(--font-sans), sans-serif;
@@ -35,7 +35,7 @@
 .hero-links-item {
   display: inline-flex;
   align-items: center;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 .hero-links-item a {

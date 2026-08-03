@@ -4,7 +4,8 @@
 }
 
 .profile p {
-  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 0;
   font-size: 0.9rem;
   line-height: 1.6;
 }
