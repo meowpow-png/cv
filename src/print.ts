@@ -5,7 +5,7 @@ async function main() {
   const page = await browser.newPage()
 
   await page.goto(`file://${process.cwd()}/dist/cv.html`)
-  await page.pdf({ path: 'dist/cv.pdf' })
+  await page.pdf({ path: 'dist/cv.pdf', printBackground: true })
 
   await browser.close()
 }
