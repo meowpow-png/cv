@@ -9,7 +9,7 @@ import { Skills } from '@/sections/Skills'
 export function App() {
   return (
     <>
-      <Hero name="Jane Doe" title="Software Engineer" tagline="Building things that work" />
+      <Hero />
       <Profile />
       <Skills />
       <Projects />
