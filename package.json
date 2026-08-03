@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && tsc-alias",
     "render": "run-s build render:exec",
     "render:exec": "node dist/main.js",
     "pdf": "run-s render print:exec",
@@ -42,6 +42,7 @@
     "prettier": "^3.9.6",
     "stylelint": "^17.14.1",
     "stylelint-config-standard": "^40.0.0",
+    "tsc-alias": "^1.9.1",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.65.0"
   },
