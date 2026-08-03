@@ -5,6 +5,8 @@
   "main": "dist/main.js",
   "scripts": {
     "build": "tsc",
+    "render": "run-s build render:exec",
+    "render:exec": "node dist/main.js",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint:eslint": "eslint .",
