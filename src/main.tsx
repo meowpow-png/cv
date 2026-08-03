@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
+import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { renderToStaticMarkup } from 'react-dom/server'
 
 import { App, cssPath as appCssPath } from '@/App'
@@ -15,6 +15,13 @@ import { cssPath as iconsCssPath } from '@/shared/components/Icons'
 import { cssPath as sectionHeadingCssPath } from '@/shared/components/SectionHeading'
 
 const tokensCssPath = 'src/shared/tokens.css'
+
+const fontFiles = [
+  'playfair-display-400.woff2',
+  'playfair-display-700.woff2',
+  'jetbrains-mono-400.woff2',
+  'jetbrains-mono-700.woff2',
+]
 
 const cssPaths = [
   tokensCssPath,
@@ -45,5 +52,9 @@ const document = `<!doctype html>
 </html>
 `
 
-mkdirSync('dist', { recursive: true })
+mkdirSync('dist/fonts', { recursive: true })
 writeFileSync('dist/cv.html', document)
+
+for (const fontFile of fontFiles) {
+  copyFileSync(`src/shared/assets/fonts/${fontFile}`, `dist/fonts/${fontFile}`)
+}
