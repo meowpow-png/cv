@@ -6,7 +6,6 @@ import { App, cssPath as appCssPath } from '@/App'
 import { cssPath as educationCssPath } from '@/sections/Education'
 import { cssPath as footerCssPath } from '@/sections/Footer'
 import { cssPath as heroCssPath } from '@/sections/Hero'
-import { cssPath as interestsCssPath } from '@/sections/Interests'
 import { cssPath as profileCssPath } from '@/sections/Profile'
 import { cssPath as projectsCssPath } from '@/sections/Projects'
 import { cssPath as skillsCssPath } from '@/sections/Skills'
@@ -31,7 +30,6 @@ const cssPaths = [
   skillsCssPath,
   projectsCssPath,
   educationCssPath,
-  interestsCssPath,
   footerCssPath,
   sectionHeadingCssPath,
   arrowLinkCssPath,

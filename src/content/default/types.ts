@@ -30,10 +30,6 @@ export interface EducationContent {
   coursework: string[]
 }
 
-export interface InterestsContent {
-  items: string[]
-}
-
 export interface FooterContent {
   prompt: string
   tagline: string

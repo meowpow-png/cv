@@ -8,7 +8,6 @@ import {
   type EducationContent,
   type FooterContent,
   type HeroContent,
-  type InterestsContent,
   type ProfileFrontmatter,
   type ProjectFrontmatter,
   type SkillsContent,
@@ -32,8 +31,6 @@ export const hero = readContent('src/content/default/hero.mdx').frontmatter as H
 export const skills = readContent('src/content/default/skills.mdx').frontmatter as SkillsContent
 export const education = readContent('src/content/default/education.mdx')
   .frontmatter as EducationContent
-export const interests = readContent('src/content/default/interests.mdx')
-  .frontmatter as InterestsContent
 export const footer = readContent('src/content/default/footer.mdx').frontmatter as FooterContent
 
 const projectSlugs = ['focusd', 'ledgerly', 'bookrest']
