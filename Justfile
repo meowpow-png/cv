@@ -18,3 +18,7 @@ claude *args:
 [arg("args", help="Command arguments")]
 playwright *args:
     @docker compose run --rm playwright {{ args }}
+
+# Render CV to PDF
+pdf:
+    @just playwright npm run pdf
