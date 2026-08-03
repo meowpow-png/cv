@@ -11,7 +11,7 @@ const columns = [
 export function Skills() {
   return (
     <section className="skills">
-      <SectionHeading name="skills_" />
+      <SectionHeading name="skills" />
       <div className="skills-columns">
         {columns.map((column) => (
           <div key={column.label} className="skills-column">

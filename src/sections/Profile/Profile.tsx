@@ -4,7 +4,7 @@ import { SectionHeading } from '@/shared/components/SectionHeading'
 export function Profile() {
   return (
     <section className="profile">
-      <SectionHeading name="profile_" />
+      <SectionHeading name="profile" />
       <div className="profile-body">
         <ProfileContent />
         <div className="profile-code">

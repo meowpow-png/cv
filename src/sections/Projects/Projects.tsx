@@ -5,7 +5,7 @@ import { SectionHeading } from '@/shared/components/SectionHeading'
 export function Projects() {
   return (
     <section className="projects">
-      <SectionHeading name="projects_" />
+      <SectionHeading name="projects" />
       <ol className="projects-list">
         {projects.map(({ frontmatter, Description }, index) => (
           <li key={frontmatter.title} className="projects-item">

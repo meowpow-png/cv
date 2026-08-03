@@ -1,1 +1,11 @@
-/* TODO: styles */
+.section-heading {
+  margin: 0;
+  font-family: var(--font-mono), monospace;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.section-heading-prompt {
+  margin-right: 0.5em;
+}
