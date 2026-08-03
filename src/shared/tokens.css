@@ -53,6 +53,7 @@
   --font-serif: 'Playfair Display', georgia, 'Times New Roman', serif;
   --font-mono:
     'JetBrains Mono', ui-monospace, 'SFMono-Regular', consolas, 'Liberation Mono', menlo, monospace;
-  --page-max-width: 52rem;
-  --page-padding-x: 2.5rem;
+  --page-width: 210mm;
+  --page-height: 297mm;
+  --page-margin: 15mm;
 }
