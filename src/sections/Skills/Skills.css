@@ -1,1 +1,16 @@
-/* TODO: styles */
+.skills-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.skills-column-label {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+}
+
+.skills-column-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
