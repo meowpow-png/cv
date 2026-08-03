@@ -2,7 +2,7 @@
 
 This project turns a CV built from React components into a print-ready PDF.
 
-There are two steps: 
+There are two steps:
 
 - render the CV to HTML
 - print that HTML to PDF
@@ -15,7 +15,7 @@ There's no web page here. The HTML output exists to be printed, not served.
 npm run render
 ```
 
-This writes a plain static file with the CSS already inlined, 
+This writes a plain static file with the CSS already inlined,
 so you can open it directly in a browser to check it before printing.
 
 ## Printing to PDF
@@ -24,7 +24,7 @@ so you can open it directly in a browser to check it before printing.
 npm run pdf
 ```
 
-This does the same render, then prints the 
+This does the same render, then prints the
 result using headless Chromium via Playwright.
 
 If Chromium isn't installed on your machine:
