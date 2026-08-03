@@ -26,6 +26,7 @@
 
 .projects-item-body p {
   margin: 0.5rem 0;
+  font-size: var(--font-size-prose);
 }
 
 .projects-item-footer {
