@@ -1,24 +1,55 @@
 .hero {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .hero-name {
   margin: 0;
-  font-size: 2rem;
+  font-family: var(--font-serif), serif;
+  font-size: 5.25rem;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
 .hero-title {
-  margin: 0.25rem 0 0;
-  font-size: 1.25rem;
-  color: #444;
+  margin: 2rem 0 0;
+  font-family: var(--font-mono), monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .hero-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem 1rem;
-  margin: 0.5rem 0 0;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 0.5rem 3.75rem;
+  margin: 1rem 0 0;
   padding: 0;
   list-style: none;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.85rem;
+}
+
+.hero-links-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.hero-links-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero-links-item a:hover {
+  text-decoration: underline;
+}
+
+.hero-divider {
+  height: 1px;
+  margin: 0;
+  border: none;
+  background: var(--color-border);
 }

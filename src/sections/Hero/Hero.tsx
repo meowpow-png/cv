@@ -13,8 +13,10 @@ const icons: Record<string, ComponentType> = {
 export function Hero() {
   return (
     <header className="hero">
-      <h1 className="hero-name">{hero.name}</h1>
-      <p className="hero-title">{hero.title}</p>
+      <div className="hero-heading">
+        <h1 className="hero-name">{hero.name}</h1>
+        <p className="hero-title">{hero.title}</p>
+      </div>
       <ul className="hero-links">
         {hero.links.map((link) => {
           const Icon = icons[link.type]
@@ -27,6 +29,7 @@ export function Hero() {
           )
         })}
       </ul>
+      <hr className="hero-divider" />
     </header>
   )
 }
