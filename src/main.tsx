@@ -11,6 +11,7 @@ import { cssPath as profileCssPath } from '@/sections/Profile'
 import { cssPath as projectsCssPath } from '@/sections/Projects'
 import { cssPath as skillsCssPath } from '@/sections/Skills'
 import { cssPath as arrowLinkCssPath } from '@/shared/ArrowLink'
+import { cssPath as iconsCssPath } from '@/shared/components'
 import { cssPath as sectionHeadingCssPath } from '@/shared/SectionHeading'
 
 const tokensCssPath = 'src/shared/tokens.css'
@@ -27,6 +28,7 @@ const cssPaths = [
   footerCssPath,
   sectionHeadingCssPath,
   arrowLinkCssPath,
+  iconsCssPath,
 ]
 
 const css = cssPaths.map((path) => readFileSync(path, 'utf-8')).join('\n')
