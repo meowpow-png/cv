@@ -31,8 +31,7 @@ export interface EducationContent {
 }
 
 export interface FooterContent {
-  prompt: string
-  tagline: string
+  text: string
 }
 
 export interface ProfileFrontmatter {
