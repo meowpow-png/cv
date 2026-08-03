@@ -7,7 +7,6 @@ export function SectionHeading({ name }: SectionHeadingProps) {
     <h2 className="section-heading">
       <span className="section-heading-prompt">$</span>
       {name}
-      <span className="section-heading-cursor">_</span>
     </h2>
   )
 }
