@@ -9,6 +9,18 @@ There are two steps:
 
 There's no web page here. The HTML output exists to be printed, not served.
 
+## Development
+
+```sh
+npm run dev
+```
+
+Watches `src/` and re-renders on every change, serving
+`dist/` with live reload so the browser updates automatically.
+
+This is a local convenience for tuning styles.
+The CV itself is still meant to be printed, not served.
+
 ## Rendering to HTML
 
 ```sh
