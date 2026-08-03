@@ -44,3 +44,7 @@ export interface FooterContent {
   prompt: string
   tagline: string
 }
+
+export interface ProfileFrontmatter {
+  code: string[]
+}
