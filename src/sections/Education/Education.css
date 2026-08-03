@@ -1,1 +1,8 @@
-/* TODO: styles */
+.education-entry-degree {
+  margin: 0;
+}
+
+.education-entry-institution {
+  margin: 0.25rem 0;
+  font-style: italic;
+}

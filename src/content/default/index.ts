@@ -5,7 +5,9 @@ import remarkFrontmatter from 'remark-frontmatter'
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
 import {
+  type EducationContent,
   type HeroContent,
+  type InterestsContent,
   type ProjectFrontmatter,
   type SkillsContent,
 } from '@/content/default/types'
@@ -24,6 +26,10 @@ function readContent(path: string) {
 export const profile = readContent('src/content/default/profile.mdx').default
 export const hero = readContent('src/content/default/hero.mdx').frontmatter as HeroContent
 export const skills = readContent('src/content/default/skills.mdx').frontmatter as SkillsContent
+export const education = readContent('src/content/default/education.mdx')
+  .frontmatter as EducationContent
+export const interests = readContent('src/content/default/interests.mdx')
+  .frontmatter as InterestsContent
 
 const projectSlugs = ['focusd', 'ledgerly', 'bookrest']
 

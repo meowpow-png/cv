@@ -28,3 +28,14 @@ export interface ProjectFrontmatter {
   stack: string[]
   link: ProjectLink
 }
+
+export interface EducationContent {
+  degree: string
+  institution: string
+  location: string
+  coursework: string[]
+}
+
+export interface InterestsContent {
+  items: string[]
+}
