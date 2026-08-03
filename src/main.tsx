@@ -13,7 +13,10 @@ import { cssPath as skillsCssPath } from '@/sections/Skills'
 import { cssPath as arrowLinkCssPath } from '@/shared/ArrowLink'
 import { cssPath as sectionHeadingCssPath } from '@/shared/SectionHeading'
 
+const tokensCssPath = 'src/shared/tokens.css'
+
 const cssPaths = [
+  tokensCssPath,
   heroCssPath,
   profileCssPath,
   skillsCssPath,

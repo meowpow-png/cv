@@ -86,6 +86,9 @@ component-name / component-name-part
 
 Shared styles belong in `shared/`.
 
+Global design tokens (colors, fonts) are CSS custom properties on `:root`
+in `shared/tokens.css`, loaded before all other stylesheets.
+
 ## Imports
 
 Imports are grouped by purpose:

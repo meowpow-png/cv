@@ -1,0 +1,11 @@
+:root {
+  --color-bg: #fbf7ee;
+  --color-fg: #111;
+  --color-accent: #e2490a;
+  --color-border: #d8d2c4;
+  --color-footer-bg: #212224;
+  --color-footer-fg: #f2f2f1;
+  --color-footer-muted: #a99a82;
+  --font-serif: georgia, 'Times New Roman', serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', consolas, 'Liberation Mono', menlo, monospace;
+}
