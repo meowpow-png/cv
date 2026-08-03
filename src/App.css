@@ -9,5 +9,5 @@ body {
   box-sizing: border-box;
   max-width: var(--page-width);
   margin: 0 auto;
-  padding: var(--page-margin);
+  padding: var(--page-margin-y) var(--page-margin-x);
 }

@@ -77,5 +77,6 @@
   --font-size-prose: 0.9rem;
   --page-width: 210mm;
   --page-height: 297mm;
-  --page-margin: 15mm;
+  --page-margin-x: 15mm;
+  --page-margin-y: 10mm;
 }
