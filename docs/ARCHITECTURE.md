@@ -27,17 +27,18 @@ src/
     sections/
     shared/
         assets/
-            icons/
+        components/
     App.tsx
     main.tsx
 ```
 
-| Module                 | Responsibility                    |
-| ---------------------- | --------------------------------- |
-| `content/`             | Authored MDX content              |
-| `sections/`            | Self-contained CV building blocks |
-| `shared/`              | Reusable components and utilities |
-| `shared/assets/icons/` | Reusable SVG icon assets          |
+| Module               | Responsibility                                        |
+| -------------------- | ----------------------------------------------------- |
+| `content/`           | Authored MDX content                                  |
+| `sections/`          | Self-contained CV building blocks                     |
+| `shared/`            | Reusable components and utilities                     |
+| `shared/assets/`     | Raw static assets (e.g. SVG icons)                    |
+| `shared/components/` | Components wrapping shared assets for use in sections |
 
 ## Sections
 
