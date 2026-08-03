@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-mono);
+}
+
+.app-content {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 3rem var(--page-padding-x);
+}

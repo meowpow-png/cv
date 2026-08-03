@@ -8,4 +8,6 @@
   --color-footer-muted: #a99a82;
   --font-serif: georgia, 'Times New Roman', serif;
   --font-mono: ui-monospace, 'SFMono-Regular', consolas, 'Liberation Mono', menlo, monospace;
+  --page-max-width: 52rem;
+  --page-padding-x: 2.5rem;
 }

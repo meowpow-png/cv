@@ -1,7 +1,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { renderToStaticMarkup } from 'react-dom/server'
 
-import { App } from '@/App'
+import { App, cssPath as appCssPath } from '@/App'
 
 import { cssPath as educationCssPath } from '@/sections/Education'
 import { cssPath as footerCssPath } from '@/sections/Footer'
@@ -17,6 +17,7 @@ const tokensCssPath = 'src/shared/tokens.css'
 
 const cssPaths = [
   tokensCssPath,
+  appCssPath,
   heroCssPath,
   profileCssPath,
   skillsCssPath,

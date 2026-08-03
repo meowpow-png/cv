@@ -9,13 +9,17 @@ import { Skills } from '@/sections/Skills'
 export function App() {
   return (
     <>
-      <Hero />
-      <Profile />
-      <Skills />
-      <Projects />
-      <Education />
-      <Interests />
-      <Footer />
+      <div className="app-content">
+        <Hero />
+        <Profile />
+        <Skills />
+        <Projects />
+        <Education />
+        <Interests />
+        <Footer />
+      </div>
     </>
   )
 }
+
+export const cssPath = 'src/App.css'
