@@ -1,9 +1,31 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { renderToStaticMarkup } from 'react-dom/server'
-import { App } from './App'
-import { cssPath as heroCssPath } from './sections/Hero'
 
-const css = readFileSync(heroCssPath, 'utf-8')
+import { App } from '@/App'
+
+import { cssPath as educationCssPath } from '@/sections/Education'
+import { cssPath as footerCssPath } from '@/sections/Footer'
+import { cssPath as heroCssPath } from '@/sections/Hero'
+import { cssPath as interestsCssPath } from '@/sections/Interests'
+import { cssPath as profileCssPath } from '@/sections/Profile'
+import { cssPath as projectsCssPath } from '@/sections/Projects'
+import { cssPath as skillsCssPath } from '@/sections/Skills'
+import { cssPath as arrowLinkCssPath } from '@/shared/ArrowLink'
+import { cssPath as sectionHeadingCssPath } from '@/shared/SectionHeading'
+
+const cssPaths = [
+  heroCssPath,
+  profileCssPath,
+  skillsCssPath,
+  projectsCssPath,
+  educationCssPath,
+  interestsCssPath,
+  footerCssPath,
+  sectionHeadingCssPath,
+  arrowLinkCssPath,
+]
+
+const css = cssPaths.map((path) => readFileSync(path, 'utf-8')).join('\n')
 const body = renderToStaticMarkup(<App />)
 
 const document = `<!doctype html>
