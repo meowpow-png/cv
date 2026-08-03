@@ -11,12 +11,12 @@ export function Projects() {
           <li key={frontmatter.title} className="projects-item">
             <span className="projects-item-marker" />
             <div className="projects-item-body">
-              <h3 className="projects-item-title">{frontmatter.title}</h3>
-              <Description />
-              <div className="projects-item-footer">
-                <p className="projects-item-stack">{frontmatter.stack.join(' · ')}</p>
-                <ArrowLink href={frontmatter.repo} label="Github" />
+              <div className="projects-item-header">
+                <h3 className="projects-item-title">{frontmatter.title}</h3>
+                <ArrowLink href={frontmatter.repo} label="GitHub" />
               </div>
+              <Description />
+              <p className="projects-item-stack">{frontmatter.stack.join(' · ')}</p>
             </div>
           </li>
         ))}

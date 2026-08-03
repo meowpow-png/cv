@@ -18,6 +18,12 @@
   background: var(--color-accent);
 }
 
+.projects-item-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
 .projects-item-title {
   margin: 0;
   font-family: var(--font-sans), sans-serif;
@@ -27,14 +33,6 @@
 .projects-item-body p {
   margin: 0.5rem 0;
   font-size: var(--font-size-prose);
-}
-
-.projects-item-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
-  margin-top: 0.5rem;
 }
 
 .projects-item-stack {
