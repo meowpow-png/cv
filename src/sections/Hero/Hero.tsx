@@ -1,12 +1,11 @@
 import { hero } from '@/content/default'
-import { GitHub, Mail, MapPin, Terminal } from '@/shared/components/Icons'
+import { GitHub, Mail, Terminal } from '@/shared/components/Icons'
 
 import { type ComponentType } from 'react'
 
 const icons: Record<string, ComponentType> = {
   website: Terminal,
   email: Mail,
-  location: MapPin,
   github: GitHub,
 }
 
