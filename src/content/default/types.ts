@@ -33,7 +33,3 @@ export interface EducationContent {
 export interface FooterContent {
   text: string
 }
-
-export interface ProfileFrontmatter {
-  code: string[]
-}

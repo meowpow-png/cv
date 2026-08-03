@@ -8,7 +8,6 @@ import {
   type EducationContent,
   type FooterContent,
   type HeroContent,
-  type ProfileFrontmatter,
   type ProjectFrontmatter,
   type SkillsContent,
 } from '@/content/default/types'
@@ -24,9 +23,7 @@ function readContent(path: string) {
   })
 }
 
-const profileContent = readContent('src/content/default/profile.mdx')
-export const profile = profileContent.default
-export const profileCode = profileContent.frontmatter as ProfileFrontmatter
+export const profile = readContent('src/content/default/profile.mdx').default
 export const hero = readContent('src/content/default/hero.mdx').frontmatter as HeroContent
 export const skills = readContent('src/content/default/skills.mdx').frontmatter as SkillsContent
 export const education = readContent('src/content/default/education.mdx')
