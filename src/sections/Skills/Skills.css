@@ -1,16 +1,21 @@
 .skills-columns {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
+  font-size: 0.85rem;
 }
 
 .skills-column-label {
   margin: 0 0 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .skills-column-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  line-height: 1.7;
 }

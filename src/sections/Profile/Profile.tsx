@@ -10,16 +10,10 @@ export function Profile() {
         <div className="profile-code">
           {profileCode.code.map((line, index) => (
             <div key={index} className="profile-code-line">
-              <span className="profile-code-line-number">
-                {String(index + 1).padStart(2, '0')}
-              </span>
+              <span className="profile-code-line-number">{String(index + 1).padStart(2, '0')}</span>
               <span className="profile-code-line-text">{line}</span>
             </div>
           ))}
-          <div className="profile-code-line">
-            <span className="profile-code-line-number" />
-            <span className="profile-code-cursor">_</span>
-          </div>
         </div>
       </div>
     </section>

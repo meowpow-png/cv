@@ -3,9 +3,9 @@ import { SectionHeading } from '@/shared/components/SectionHeading'
 
 const columns = [
   { label: 'Languages', items: skills.languages },
-  { label: 'Frameworks & Libraries', items: skills.frameworks },
-  { label: 'Tools & Technologies', items: skills.tools },
-  { label: 'Core Skills', items: skills.coreSkills },
+  { label: 'Frameworks', items: skills.frameworks },
+  { label: 'Tools', items: skills.tools },
+  { label: 'Concepts', items: skills.concepts },
 ]
 
 export function Skills() {

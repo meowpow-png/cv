@@ -1,1 +1,43 @@
-/* TODO: styles */
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.profile-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.profile-body > p {
+  flex: 1;
+}
+
+.profile-code {
+  position: relative;
+  flex-shrink: 0;
+  padding-left: 2.5rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.profile-code-line {
+  display: flex;
+  gap: 1rem;
+}
+
+.profile-code-line-number {
+  width: 2ch;
+  color: var(--color-muted);
+}
+
+.profile-code-line-text {
+  white-space: pre;
+}
