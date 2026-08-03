@@ -20,6 +20,7 @@ export interface SkillsContent {
 export interface ProjectFrontmatter {
   title: string
   repo: string
+  linkLabel: string
   stack: string[]
 }
 

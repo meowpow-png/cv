@@ -13,7 +13,7 @@ export function Projects() {
             <div className="projects-item-body">
               <div className="projects-item-header">
                 <h3 className="projects-item-title">{frontmatter.title}</h3>
-                <ArrowLink href={frontmatter.repo} label="GitHub" />
+                <ArrowLink href={frontmatter.repo} label={frontmatter.linkLabel} />
               </div>
               <Description />
               <p className="projects-item-stack">{frontmatter.stack.join(' · ')}</p>
