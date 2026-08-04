@@ -14,7 +14,7 @@ export interface SkillsContent {
   languages: string[]
   frameworks: string[]
   tools: string[]
-  concepts: string[]
+  systems: string[]
 }
 
 export interface ProjectFrontmatter {
