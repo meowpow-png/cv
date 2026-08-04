@@ -1,0 +1,91 @@
+name: CI
+
+permissions:
+  contents: read
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, dev]
+    paths: &paths
+      - 'src/**'
+      - 'docs/**'
+      - '**/*.md'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.npmrc'
+      - 'tsconfig.json'
+      - 'eslint.config.mjs'
+      - '.stylelintrc.json'
+      - '.prettierrc.json'
+      - '.prettierignore'
+      - 'knip.json'
+      - '.github/**'
+  pull_request:
+    branches: [main, dev]
+    paths: *paths
+
+jobs:
+  qualitycheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: package.json
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check formatting
+        id: format
+        continue-on-error: true
+        run: npm run format:check
+
+      - name: Lint
+        id: lint
+        continue-on-error: true
+        run: npm run lint
+
+      - name: Type check
+        id: typecheck
+        continue-on-error: true
+        run: npm run typecheck
+
+      - name: Build project
+        id: build
+        continue-on-error: true
+        run: npm run build
+
+      - name: Check unused exports and dependencies
+        id: knip
+        continue-on-error: true
+        run: npm run knip
+
+      - name: Write job summary
+        if: always()
+        env:
+          FORMAT_OUTCOME: ${{ steps.format.outcome }}
+          LINT_OUTCOME: ${{ steps.lint.outcome }}
+          TYPECHECK_OUTCOME: ${{ steps.typecheck.outcome }}
+          BUILD_OUTCOME: ${{ steps.build.outcome }}
+          KNIP_OUTCOME: ${{ steps.knip.outcome }}
+        run: sh .github/scripts/render-quality-summary.sh >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Report check results
+        if: always()
+        run: |
+          outcomes=(
+            "${{ steps.format.outcome }}"
+            "${{ steps.lint.outcome }}"
+            "${{ steps.typecheck.outcome }}"
+            "${{ steps.build.outcome }}"
+            "${{ steps.knip.outcome }}"
+          )
+          for outcome in "${outcomes[@]}"; do
+            [ "$outcome" = "success" ] || exit 1
+          done
