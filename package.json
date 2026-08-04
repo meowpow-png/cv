@@ -8,6 +8,7 @@
   },
   "packageManager": "npm@10.9.8",
   "scripts": {
+    "prepare": "lefthook install",
     "build": "tsc && tsc-alias",
     "render": "run-s build render:exec",
     "render:exec": "node dist/main.js",
