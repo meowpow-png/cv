@@ -30,7 +30,7 @@ export const education = readContent('src/content/default/education.mdx')
   .frontmatter as EducationContent
 export const footer = readContent('src/content/default/footer.mdx').frontmatter as FooterContent
 
-const projectSlugs = ['focusd', 'ledgerly', 'bookrest']
+const projectSlugs = ['wifi-admin', 'mipe', 'hackaprompt']
 
 export const projects = projectSlugs.map((slug) => {
   const project = readContent(`src/content/default/projects/${slug}.mdx`)
