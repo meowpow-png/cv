@@ -7,7 +7,7 @@ and this project adheres to CalVer.
 
 ## [Unreleased]
 
-## [2026.8.0] - 2026-08-04
+## [2026.08.0] - 2026-08-04
 
 ### Added
 
@@ -15,5 +15,5 @@ and this project adheres to CalVer.
 - MDX content pipeline, rendering each section from authored content
 - PDF export via headless Chromium, printed to a standard A4 page
 
-[Unreleased]: https://github.com/meowpow-png/cv/compare/v2026.8.0...HEAD
-[2026.8.0]: https://github.com/meowpow-png/cv/releases/tag/v2026.8.0
+[Unreleased]: https://github.com/meowpow-png/cv/compare/v2026.08.0...HEAD
+[2026.08.0]: https://github.com/meowpow-png/cv/releases/tag/v2026.08.0
