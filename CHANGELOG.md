@@ -14,3 +14,6 @@ and this project adheres to CalVer.
 - Hero, Profile, Skills, Projects, Education, and Footer sections
 - MDX content pipeline, rendering each section from authored content
 - PDF export via headless Chromium, printed to a standard A4 page
+
+[Unreleased]: https://github.com/meowpow-png/cv/compare/v2026.8.0...HEAD
+[2026.8.0]: https://github.com/meowpow-png/cv/releases/tag/v2026.8.0
