@@ -14,6 +14,8 @@ generated from the same components by swapping content and configuration.
 MDX content rendered through React components to static HTML,
 then printed to PDF with Playwright. No client runtime, no web page.
 
+Latest version of my CV available in [releases](https://github.com/meowpow-png/cv/releases/latest).
+
 ## Getting started
 
 To get your environment ready:
