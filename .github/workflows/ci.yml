@@ -40,9 +40,8 @@ jobs:
 
       - name: Enable Corepack
         run: |
-          corepack --version
           corepack enable
-          which npm
+          corepack prepare "$(node -p "require('./package.json').packageManager")" --activate
           npm -v
 
       - name: Install dependencies
