@@ -1,0 +1,7 @@
+.footer {
+  margin-top: 2rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  text-align: left;
+}

@@ -1,0 +1,24 @@
+.education-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.education-entry-degree {
+  margin: 0;
+  font-family: var(--font-serif), serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.education-entry-institution {
+  margin: 0;
+  font-style: italic;
+  font-size: var(--font-size-prose);
+  color: var(--color-muted);
+}
+
+.education-entry-coursework {
+  margin: 0;
+  font-size: 0.9rem;
+}
