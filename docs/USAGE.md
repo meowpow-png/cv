@@ -15,7 +15,7 @@ Enable Corepack once per environment, so npm matches the version
 pinned in `package.json`'s `packageManager` field:
 
 ```sh
-corepack enable
+corepack enable npm
 ```
 
 Without this, npm falls back to whatever version ships with your
