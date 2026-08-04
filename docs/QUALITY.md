@@ -64,3 +64,11 @@ No auto-fix here, if it flags something you either delete it or it's a false pos
 ```sh
 npm run knip
 ```
+
+## Git hooks
+
+Lefthook runs quality checks before every `git push`,
+so a broken build or failing check never leaves your machine.
+
+Hooks are installed automatically by `prepare` script, which runs
+on `npm install` and `npm ci`, so there's nothing to set up by hand.

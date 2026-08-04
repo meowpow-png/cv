@@ -9,6 +9,19 @@ There are two steps:
 
 There's no web page here. The HTML output exists to be printed, not served.
 
+## Setup
+
+Enable Corepack once per environment, so npm matches the version
+pinned in `package.json`'s `packageManager` field:
+
+```sh
+corepack enable
+```
+
+Without this, npm falls back to whatever version ships with your
+installed Node, which can silently drift from the version
+`package-lock.json` was generated with.
+
 ## Development
 
 ```sh
