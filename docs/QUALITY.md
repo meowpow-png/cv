@@ -27,8 +27,9 @@ npm run format
 
 ## Linting
 
-Linting uses ESLint for JS/TS, catching real bugs Prettier won't touch.
-ESLint doesn't understand CSS though, so Stylelint covers that instead.
+Linting uses ESLint for JS/TS and Markdown, catching real bugs
+Prettier won't touch. ESLint doesn't understand CSS though,
+so Stylelint covers that instead.
 
 Most of it can be fixed automatically too:
 
@@ -43,6 +44,16 @@ you actually have to fix the types:
 
 ```sh
 npm run typecheck
+```
+
+## Build
+
+The build script runs `tsc` then `tsc-alias`, so it
+doubles as a check that path aliases resolve correctly,
+not just that types are valid:
+
+```sh
+npm run build
 ```
 
 ## Exports and dependencies
