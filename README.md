@@ -14,10 +14,21 @@ generated from the same components by swapping content and configuration.
 MDX content rendered through React components to static HTML,
 then printed to PDF with Playwright. No client runtime, no web page.
 
+## Getting started
+
+To get your environment ready:
+
 ```sh
 npm install
-npm run pdf
 ```
+
+To generate the CV in PDF format:
+
+```sh
+just pdf
+```
+
+See [Usage](docs/USAGE.md) for detailed setup instructions.
 
 ## Further reading
 
