@@ -17,31 +17,30 @@ Replace placeholder content with your own,
 so the result is something you'd actually send to someone.
 
 - [x] Draft placeholder content for every section as a starting point
-- [ ] Write real content for every planned section
-- [ ] Proofread and fact-check the finished CV
+- [x] Write real content for every planned section
+- [x] Proofread and fact-check the finished CV
 
 ### Styling
 
 Match visual design to mockup so the CV looks the way it's meant to.
 
-- [ ] Style every section to match the mockup
-- [ ] Fine-tune spacing, alignment, and detail once every section is styled
+- [x] Style every section to match the mockup
+- [x] Fine-tune spacing, alignment, and detail once every section is styled
 
 ### Print Quality
 
 Make sure what renders on screen is exactly what shows up on paper.
 
 - [x] Get the CV rendering to HTML and printing to PDF end to end
-- [ ] Confirm margins and page size match standard printable format
-- [ ] Set the document's title and author details
-- [ ] Compare rendered result against design mockup
+- [x] Confirm margins and page size match standard printable format
+- [x] Compare rendered result against design mockup
 
 ### Documentation
 
 Bring the project's documentation in line with what's actually built.
 
 - [x] Document how the project is built and used
-- [ ] Update README to reflect the current state of the project
+- [x] Update README to reflect the current state of the project
 
 ### Quality Assurance
 
@@ -49,7 +48,7 @@ Confirm the project is in a clean, shippable state before calling this milestone
 
 - [x] Set up automated formatting, linting, and type checking
 - [x] Set up checks for unused code and dependencies
-- [ ] Run the full quality check suite and resolve anything it flags
+- [x] Run the full quality check suite and resolve anything it flags
 
 ## Milestone 2 — Multi-variant system
 
