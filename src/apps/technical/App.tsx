@@ -12,9 +12,9 @@ export function App() {
     <>
       <div className="app-content">
         <Hero content={hero} />
-        <Profile content={profile} />
         <Skills content={skills} />
         <Projects content={projects} />
+        <Profile content={profile} />
         <Education content={education} />
         <Footer content={footer} />
       </div>
@@ -22,4 +22,4 @@ export function App() {
   )
 }
 
-export const cssPath = 'src/App.css'
+export const cssPath = 'src/apps/technical/App.css'
