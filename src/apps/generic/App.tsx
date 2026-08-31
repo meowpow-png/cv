@@ -2,20 +2,20 @@ import { Education } from '@/sections/Education'
 import { Hero } from '@/sections/Hero'
 import { Languages } from '@/sections/Languages'
 import { Profile } from '@/sections/Profile'
-import { Skills } from '@/sections/Skills'
+import { SkillsList } from '@/sections/SkillsList'
 import { WorkExperience } from '@/sections/WorkExperience'
 
-import { hero, profile } from '@/content/generic'
+import { education, hero, languages, profile, skills, workExperience } from '@/content/generic'
 
 export function App() {
   return (
     <div className="app-content">
       <Hero content={hero} />
       <Profile content={profile} />
-      <WorkExperience heading="Radno iskustvo" />
-      <Skills heading="Vještine" />
-      <Education heading="Obrazovanje" />
-      <Languages heading="Jezici" />
+      <WorkExperience heading="Radno iskustvo" content={workExperience} />
+      <SkillsList heading="Vještine" content={skills} />
+      <Education heading="Obrazovanje" content={education} />
+      <Languages heading="Jezici" content={languages} />
     </div>
   )
 }
