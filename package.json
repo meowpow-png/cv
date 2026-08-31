@@ -1,6 +1,6 @@
 {
   "name": "cv",
-  "version": "2026.8.2",
+  "version": "2026.8.3",
   "description": "",
   "main": "dist/main.js",
   "engines": {
@@ -12,7 +12,7 @@
     "clean": "rm -rf node_modules dist",
     "build": "tsc && tsc-alias",
     "render": "run-s build render:exec",
-    "render:exec": "node dist/main.js",
+    "render:exec": "node --env-file-if-exists=.env dist/main.js",
     "watch:render": "nodemon --watch src -e ts,tsx,css,mdx --exec \"npm run render\"",
     "serve:generic": "web-dev-server --root-dir dist --open generic.html --watch",
     "serve:dev": "web-dev-server --root-dir dist --open dev.html --watch",
