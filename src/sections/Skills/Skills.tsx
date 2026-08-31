@@ -1,14 +1,19 @@
-import { skills } from '@/content/default'
 import { SectionHeading } from '@/shared/components/SectionHeading'
 
-const columns = [
-  { label: 'Languages', items: skills.languages },
-  { label: 'Frameworks', items: skills.frameworks },
-  { label: 'Systems', items: skills.systems },
-  { label: 'Tools', items: skills.tools },
-]
+import { type SkillsContent } from '@/shared/content-types'
 
-export function Skills() {
+export interface SkillsProps {
+  content: SkillsContent
+}
+
+export function Skills({ content }: SkillsProps) {
+  const columns = [
+    { label: 'Languages', items: content.languages },
+    { label: 'Frameworks', items: content.frameworks },
+    { label: 'Systems', items: content.systems },
+    { label: 'Tools', items: content.tools },
+  ]
+
   return (
     <section className="skills">
       <SectionHeading name="Skills" />

@@ -10,7 +10,7 @@ import {
   type HeroContent,
   type ProjectFrontmatter,
   type SkillsContent,
-} from '@/content/default/types'
+} from '@/shared/content-types'
 
 function readContent(path: string) {
   const source = readFileSync(path, 'utf-8')
