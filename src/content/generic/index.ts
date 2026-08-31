@@ -11,7 +11,7 @@ import {
 
 export const profile = readMdx('src/content/generic/profile.mdx').default as ProfileContent
 
-const workExperienceSlugs = ['konobar', 'zavarivac']
+const workExperienceSlugs = ['konobar', 'zavarivac', 'glazbenik']
 
 export const workExperience: WorkExperienceEntry[] = workExperienceSlugs.map((slug) => {
   const entry = readMdx(`src/content/generic/work-experience/${slug}.mdx`)
