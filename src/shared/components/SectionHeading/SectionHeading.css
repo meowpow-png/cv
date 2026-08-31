@@ -1,5 +1,5 @@
 .section-heading {
-  margin-top: 1.25rem;
+  margin-top: 0;
   margin-bottom: 0.4rem;
   font-family: var(--font-sans), sans-serif;
   font-size: 1.3rem;
@@ -9,7 +9,7 @@
 
 .section-heading-divider {
   height: 1px;
-  margin: 0 0 1rem;
+  margin: 0;
   border: none;
   background: var(--color-border);
 }

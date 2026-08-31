@@ -12,17 +12,19 @@ export function Skills() {
   return (
     <section className="skills">
       <SectionHeading name="Skills" />
-      <div className="skills-columns">
-        {columns.map((column) => (
-          <div key={column.label} className="skills-column">
-            <h3 className="skills-column-label">{column.label}</h3>
-            <ul className="skills-column-list">
-              {column.items.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+      <div className="section-content">
+        <div className="skills-columns">
+          {columns.map((column) => (
+            <div key={column.label} className="skills-column">
+              <h3 className="skills-column-label">{column.label}</h3>
+              <ul className="skills-column-list">
+                {column.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

@@ -14,6 +14,7 @@ import { cssPath as iconsCssPath } from '@/shared/components/Icons'
 import { cssPath as sectionHeadingCssPath } from '@/shared/components/SectionHeading'
 
 const tokensCssPath = 'src/shared/tokens.css'
+const sectionContentCssPath = 'src/shared/section-content.css'
 
 const fontFiles = [
   'playfair-display-400.woff2',
@@ -28,6 +29,7 @@ const fontFiles = [
 
 const cssPaths = [
   tokensCssPath,
+  sectionContentCssPath,
   appCssPath,
   heroCssPath,
   profileCssPath,
