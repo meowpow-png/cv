@@ -21,6 +21,8 @@ const fontFiles = [
   'jetbrains-mono-400.woff2',
   'jetbrains-mono-700.woff2',
   'ibm-plex-sans-400.woff2',
+  'ibm-plex-sans-500.woff2',
+  'ibm-plex-sans-600.woff2',
   'ibm-plex-sans-700.woff2',
 ]
 
