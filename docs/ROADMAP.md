@@ -56,14 +56,14 @@ Confirm the project is in a clean, shippable state before calling this milestone
 
 Support more than one version of the CV from the same set of building blocks.
 
-- [ ] Make it possible to choose which variant gets rendered
-- [ ] Create a second variant to prove the idea holds up beyond a single case
+- [x] Make it possible to choose which variant gets rendered
+- [x] Create a second variant to prove the idea holds up beyond a single case
 
 ### Documentation
 
 Explain how variants work so it isn't tribal knowledge.
 
-- [ ] Document how to create, select, and render a variant
+- [x] Document how to create, select, and render a variant
 
 ## Later — not yet scoped
 

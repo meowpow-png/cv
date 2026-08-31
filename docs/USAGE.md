@@ -9,6 +9,15 @@ There are two steps:
 
 There's no web page here. The HTML output exists to be printed, not served.
 
+The project ships more than one CV type, each its own layout under
+`src/apps/`:
+
+- `generic` — currently blank, a starting point for a non-dev-specific CV
+- `dev` — the software development CV
+
+Every command below renders/prints both types in one go, writing separate
+output files per type.
+
 ## Setup
 
 Enable Corepack once per environment, so npm matches the version
@@ -25,11 +34,13 @@ installed Node, which can silently drift from the version
 ## Development
 
 ```sh
-npm run dev
+npm run dev:generic
+npm run dev:dev
 ```
 
-Watches `src/` and re-renders on every change, serving
-`dist/` with live reload so the browser updates automatically.
+Watches `src/` and re-renders on every change, serving `dist/` with live
+reload so the browser updates automatically. Pick the command matching
+the CV type you're tuning — each opens that type's HTML file.
 
 This is a local convenience for tuning styles.
 The CV itself is still meant to be printed, not served.
@@ -40,8 +51,8 @@ The CV itself is still meant to be printed, not served.
 npm run render
 ```
 
-This writes a plain static file with the CSS already inlined,
-so you can open it directly in a browser to check it before printing.
+This writes one static file per CV type with the CSS already inlined,
+so you can open any of them directly in a browser to check before printing.
 
 ## Printing to PDF
 
@@ -62,7 +73,8 @@ This runs the same pipeline, only with Docker Compose.
 
 ## Output
 
-Both commands write into `dist/`, which is generated and gitignored:
+Both commands write into `dist/`, which is generated and gitignored,
+one file per CV type:
 
-- `dist/cv.html` — the rendered page
-- `dist/cv.pdf` — the printed PDF
+- `dist/generic.html`, `dist/dev.html` — the rendered pages
+- `dist/generic.pdf`, `dist/dev.pdf` — the printed PDFs
