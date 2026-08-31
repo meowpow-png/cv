@@ -7,6 +7,7 @@ import { App as GenericApp, cssPath as genericCssPath } from '@/apps/generic/App
 import { cssPath as educationCssPath } from '@/sections/Education'
 import { cssPath as footerCssPath } from '@/sections/Footer'
 import { cssPath as heroCssPath } from '@/sections/Hero'
+import { cssPath as languagesCssPath } from '@/sections/Languages'
 import { cssPath as profileCssPath } from '@/sections/Profile'
 import { cssPath as projectsCssPath } from '@/sections/Projects'
 import { cssPath as skillsCssPath } from '@/sections/Skills'
@@ -35,6 +36,7 @@ const sharedCssPaths = [
   projectsCssPath,
   educationCssPath,
   workExperienceCssPath,
+  languagesCssPath,
   footerCssPath,
   sectionHeadingCssPath,
   arrowLinkCssPath,
