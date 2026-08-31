@@ -13,19 +13,14 @@ import { cssPath as skillsCssPath } from '@/sections/Skills'
 import { cssPath as arrowLinkCssPath } from '@/shared/components/ArrowLink'
 import { cssPath as iconsCssPath } from '@/shared/components/Icons'
 import { cssPath as sectionHeadingCssPath } from '@/shared/components/SectionHeading'
+import { cvTypeNames } from '@/shared/cv-types'
 
 import { type ComponentType } from 'react'
 
-interface CvType {
-  name: string
-  App: ComponentType
-  cssPath: string
+const cvTypes: Record<(typeof cvTypeNames)[number], { App: ComponentType; cssPath: string }> = {
+  generic: { App: GenericApp, cssPath: genericCssPath },
+  dev: { App: DevApp, cssPath: devCssPath },
 }
-
-const cvTypes: CvType[] = [
-  { name: 'generic', App: GenericApp, cssPath: genericCssPath },
-  { name: 'dev', App: DevApp, cssPath: devCssPath },
-]
 
 const tokensCssPath = 'src/shared/tokens.css'
 const sectionContentCssPath = 'src/shared/section-content.css'
@@ -57,7 +52,9 @@ const fontFiles = [
 
 mkdirSync('dist/fonts', { recursive: true })
 
-for (const { name, App, cssPath } of cvTypes) {
+for (const name of cvTypeNames) {
+  const { App, cssPath } = cvTypes[name]
+
   const css = [...sharedCssPaths, cssPath].map((path) => readFileSync(path, 'utf-8')).join('\n')
   const body = renderToStaticMarkup(<App />)
 
