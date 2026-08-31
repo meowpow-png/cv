@@ -3,5 +3,10 @@ export interface SectionHeadingProps {
 }
 
 export function SectionHeading({ name }: SectionHeadingProps) {
-  return <h2 className="section-heading">{name}</h2>
+  return (
+    <>
+      <h2 className="section-heading">{name}</h2>
+      <hr className="section-heading-divider" />
+    </>
+  )
 }
