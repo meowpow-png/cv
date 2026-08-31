@@ -33,6 +33,17 @@ export interface ProjectContent {
   Description: ComponentType
 }
 
+export interface WorkExperienceFrontmatter {
+  role: string
+  company: string
+  period: string
+}
+
+export interface WorkExperienceEntry {
+  frontmatter: WorkExperienceFrontmatter
+  Description: ComponentType
+}
+
 export interface EducationContent {
   degree: string
   institution: string
