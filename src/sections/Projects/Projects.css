@@ -12,12 +12,6 @@
   gap: 1.25rem;
 }
 
-.projects-item-marker {
-  flex-shrink: 0;
-  width: 2px;
-  background: var(--color-accent);
-}
-
 .projects-item-header {
   display: flex;
   align-items: baseline;

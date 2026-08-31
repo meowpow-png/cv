@@ -9,7 +9,6 @@ export function Projects() {
       <ol className="projects-list">
         {projects.map(({ frontmatter, Description }) => (
           <li key={frontmatter.title} className="projects-item">
-            <span className="projects-item-marker" />
             <div className="projects-item-body">
               <div className="projects-item-header">
                 <h3 className="projects-item-title">{frontmatter.title}</h3>
