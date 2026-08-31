@@ -1,23 +1,10 @@
 # Architecture
 
-## Overview
+The project follows a section-oriented architecture that groups related CV content and its rendering logic into self-contained modules. A "section" here is a CV building block, not a page.
 
-The project follows a section-oriented architecture that groups
-related CV content and its rendering logic into self-contained modules.
-A "section" here is a CV building block, not a page.
-
-There is no client runtime. Everything is rendered once via
-`react-dom/server` to static HTML, which Playwright then prints to PDF.
+There is no client runtime. Everything is rendered once via `react-dom/server` to static HTML, which Playwright then prints to PDF.
 
 The architecture emphasizes clear boundaries, explicit data flow, and minimal complexity.
-
-## Design Principles
-
-- Section-oriented organization
-- Explicit separation of UI and application logic
-- Self-contained sections
-- Shared functionality through common modules
-- Minimal architectural complexity
 
 ## Project Structure
 
@@ -44,14 +31,9 @@ src/
 
 ## Apps
 
-An app represents a CV layout. It's a flat set of files under `src/apps/<type>/`:
-an `App.tsx` component and its colocated `App.css`, both imported directly.
+An app represents a CV layout. It's a flat set of files under `src/apps/<type>/`: an `App.tsx` component and its colocated `App.css`, both imported directly.
 
-An app composes sections into one arrangement and wires each section's
-`content` prop from a content submodule. Layout and content vary
-independently: two apps can render the same content submodule in
-completely different arrangements, and a new CV type can reuse an
-existing content submodule or bring its own.
+An app composes sections into one arrangement and wires each section's `content` prop from a content submodule. Layout and content vary independently: two apps can render the same content submodule in completely different arrangements, and a new CV type can reuse an existing content submodule or bring its own.
 
 **Rules**
 
@@ -61,12 +43,9 @@ existing content submodule or bring its own.
 
 ## Sections
 
-A section is a CV building block (e.g. Hero, Experience, Education, Skills).
+A section is a CV building block.
 
-A typical section is a flat set of files: the component, its colocated
-CSS, and an `index.ts` re-exporting the public API. Props are typed
-inline in the component file. No separate `types.ts` is needed
-unless a section grows enough to need one.
+A typical section is a flat set of files: the component, its colocated CSS, and an `index.ts` re-exporting the public API. Props are typed inline in the component file. No separate `types.ts` is needed unless a section grows enough to need one.
 
 **Rules**
 
@@ -83,7 +62,7 @@ Reusable SVG icons are stored in `src/shared/assets/icons/`.
 
 Flat single-file modules hold cross-cutting contracts and utilities:
 
-- `content-types.ts` — content shape contracts sections and content
+- `content-types.ts` — content shape contracts sections and content both depend on
 - `mdx.ts` — MDX-reading function content submodules use
 - `cv-types.ts` — the registered CV type names `main` and `print` both read
 
@@ -95,9 +74,7 @@ Flat single-file modules hold cross-cutting contracts and utilities:
 
 ## Content
 
-Authored MDX content lives in `src/content/`, one submodule per content
-set. A content submodule isn't tied to one app. Any app can wire it
-into its sections, and apps are free to share one.
+Authored MDX content lives in `src/content/`, one submodule per content set. A content submodule isn't tied to one app. Any app can wire it into its sections, and apps are free to share one.
 
 Sections render content; MDX may use shared modules but must not depend on section modules.
 
@@ -105,9 +82,7 @@ Each content submodule exposes its data through `index.ts`.
 
 ## Styling
 
-Styles are colocated with the components they belong to as plain CSS
-since there's no bundler to process them. Class names follow
-this convention to avoid collision:
+Styles are colocated with the components they belong to as plain CSS since there's no bundler to process them. Class names follow this convention to avoid collision:
 
 ```text
 component-name / component-name-part
@@ -115,8 +90,7 @@ component-name / component-name-part
 
 Shared styles belong in `shared/`.
 
-Global design tokens (colors, fonts) are CSS custom properties on `:root`
-in `shared/tokens.css`, loaded before all other stylesheets.
+Global design tokens (colors, fonts) are CSS custom properties on `:root` in `shared/tokens.css`, loaded before all other stylesheets.
 
 ## Imports
 
@@ -126,9 +100,7 @@ Imports are grouped by purpose:
 2. Type-only imports
 3. Static assets
 
-A module is imported through `index.ts`, never through an internal file path.
-Flat single-file modules (`shared/version.ts`, `shared/content-types.ts`, an
-app's `App.tsx`) have no `index.ts` and are imported directly instead.
+A module is imported through `index.ts`, never through an internal file path. Flat single-file modules (`shared/version.ts`, `shared/content-types.ts`, an app's `App.tsx`) have no `index.ts` and are imported directly instead.
 
 ## Dependency Rules
 
@@ -157,4 +129,4 @@ apps, shared
 - Content must not depend on section modules
 - Apps must not depend on other apps
 - Each app composes sections into one CV layout but contains no application logic
-- `main` renders every registered app via `react-dom/server` to static HTML
+- `main` renders every registered app via `react-dom/server` to static HTML; it does not bootstrap a client

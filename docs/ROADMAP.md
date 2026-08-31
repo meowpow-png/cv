@@ -13,8 +13,7 @@ Get the project scaffolded and the development environment ready to build on.
 
 ### Content
 
-Replace placeholder content with your own,
-so the result is something you'd actually send to someone.
+Replace placeholder content with your own, so the result is something you'd actually send to someone.
 
 - [x] Draft placeholder content for every section as a starting point
 - [x] Write real content for every planned section
