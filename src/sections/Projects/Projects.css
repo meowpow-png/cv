@@ -21,7 +21,8 @@
 .projects-item-title {
   margin: 0;
   font-family: var(--font-sans), sans-serif;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .projects-item-body p {
