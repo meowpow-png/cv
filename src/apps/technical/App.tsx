@@ -12,10 +12,16 @@ export function App() {
     <>
       <div className="app-content">
         <Hero content={hero} />
-        <Skills content={skills} />
-        <Projects content={projects} />
-        <Profile content={profile} />
-        <Education content={education} />
+        <div className="app-grid">
+          <aside className="app-sidebar">
+            <Skills content={skills} />
+            <Education content={education} />
+          </aside>
+          <main className="app-main">
+            <Profile content={profile} />
+            <Projects content={projects} />
+          </main>
+        </div>
         <Footer content={footer} />
       </div>
     </>

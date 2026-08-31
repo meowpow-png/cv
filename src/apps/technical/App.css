@@ -11,3 +11,9 @@ body {
   margin: 0 auto;
   padding: var(--page-margin-y) var(--page-margin-x);
 }
+
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--page-margin-x);
+}
