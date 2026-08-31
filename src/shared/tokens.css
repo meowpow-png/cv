@@ -97,7 +97,7 @@
     'JetBrains Mono', ui-monospace, 'SFMono-Regular', consolas, 'Liberation Mono', menlo, monospace;
   --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
   --font-size-prose: 0.9rem;
-  --section-content-padding: 1.1rem;
+  --section-content-padding: 0.85rem;
   --page-width: 210mm;
   --page-height: 297mm;
   --page-margin-x: 15mm;
