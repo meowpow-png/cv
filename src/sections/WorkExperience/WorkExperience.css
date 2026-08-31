@@ -1,0 +1,37 @@
+.work-experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.work-experience-item-role {
+  margin: 0;
+  font-family: var(--font-serif), serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.work-experience-item-company {
+  margin: 0;
+  font-weight: 700;
+}
+
+.work-experience-item-period {
+  margin: 0;
+  font-style: italic;
+  color: var(--color-muted);
+}
+
+.work-experience-item p {
+  margin: 0.5rem 0;
+  font-size: var(--font-size-prose);
+}
+
+.work-experience-item ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  font-size: var(--font-size-prose);
+}

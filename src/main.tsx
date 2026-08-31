@@ -10,6 +10,7 @@ import { cssPath as heroCssPath } from '@/sections/Hero'
 import { cssPath as profileCssPath } from '@/sections/Profile'
 import { cssPath as projectsCssPath } from '@/sections/Projects'
 import { cssPath as skillsCssPath } from '@/sections/Skills'
+import { cssPath as workExperienceCssPath } from '@/sections/WorkExperience'
 import { cssPath as arrowLinkCssPath } from '@/shared/components/ArrowLink'
 import { cssPath as iconsCssPath } from '@/shared/components/Icons'
 import { cssPath as sectionHeadingCssPath } from '@/shared/components/SectionHeading'
@@ -33,6 +34,7 @@ const sharedCssPaths = [
   skillsCssPath,
   projectsCssPath,
   educationCssPath,
+  workExperienceCssPath,
   footerCssPath,
   sectionHeadingCssPath,
   arrowLinkCssPath,
