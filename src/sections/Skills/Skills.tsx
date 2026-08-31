@@ -3,23 +3,20 @@ import { SectionHeading } from '@/shared/components/SectionHeading'
 import { type SkillsContent } from '@/shared/content-types'
 
 export interface SkillsProps {
-  heading?: string
-  content?: SkillsContent
+  content: SkillsContent
 }
 
-export function Skills({ heading = 'Skills', content }: SkillsProps) {
-  const columns = content
-    ? [
-        { label: 'Languages', items: content.languages },
-        { label: 'Frameworks', items: content.frameworks },
-        { label: 'Systems', items: content.systems },
-        { label: 'Tools', items: content.tools },
-      ]
-    : []
+export function Skills({ content }: SkillsProps) {
+  const columns = [
+    { label: 'Languages', items: content.languages },
+    { label: 'Frameworks', items: content.frameworks },
+    { label: 'Systems', items: content.systems },
+    { label: 'Tools', items: content.tools },
+  ]
 
   return (
     <section className="skills">
-      <SectionHeading name={heading} />
+      <SectionHeading name="Skills" />
       <div className="section-content">
         <div className="skills-columns">
           {columns.map((column) => (
