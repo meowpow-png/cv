@@ -4,10 +4,15 @@ import { type EducationContent } from '@/shared/content-types'
 
 export interface EducationProps {
   heading?: string
+  courseworkLabel?: string
   content: EducationContent
 }
 
-export function Education({ heading = 'Education', content }: EducationProps) {
+export function Education({
+  heading = 'Education',
+  courseworkLabel = 'Relevant Coursework',
+  content,
+}: EducationProps) {
   return (
     <section className="education">
       <SectionHeading name={heading} />
@@ -18,7 +23,7 @@ export function Education({ heading = 'Education', content }: EducationProps) {
             {content.institution}, {content.location}
           </p>
           <p className="education-entry-coursework">
-            <strong>Relevant Coursework:</strong> {content.coursework.join(', ')}
+            <strong>{courseworkLabel}:</strong> {content.coursework.join(', ')}
           </p>
         </div>
       </div>

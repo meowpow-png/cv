@@ -12,7 +12,7 @@ export function App() {
       <Hero content={hero} />
       <Profile content={profile} />
       <WorkExperience heading="Radno iskustvo" content={workExperience} />
-      <Education heading="Obrazovanje" content={education} />
+      <Education heading="Obrazovanje" courseworkLabel="Relevantni kolegiji" content={education} />
       <Languages heading="Jezici" content={languages} />
     </div>
   )
