@@ -10,7 +10,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/2.0.0/),
 
 ### Changed
 
-- Section headers now use the body sans-serif font and standard text color, dropping the monospace `$` prompt styling
+- Section headers now use body sans-serif font and standard text color
+- Dropped the monospace `$` prompt styling from section headers
 - Added a horizontal rule below each section header, with padding added to section content
 - Removed the accent-colored marker bars to the left of each project
 - Added IBM Plex Sans 500 and 600 weights alongside the existing 400 and 700
