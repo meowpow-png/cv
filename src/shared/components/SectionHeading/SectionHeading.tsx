@@ -4,9 +4,9 @@ export interface SectionHeadingProps {
 
 export function SectionHeading({ name }: SectionHeadingProps) {
   return (
-    <h2 className="section-heading">
-      <span className="section-heading-prompt">$</span>
-      {name}
-    </h2>
+    <>
+      <h2 className="section-heading">{name}</h2>
+      <hr className="section-heading-divider" />
+    </>
   )
 }

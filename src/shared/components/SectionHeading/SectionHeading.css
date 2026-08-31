@@ -1,11 +1,15 @@
 .section-heading {
-  margin: 1.5rem 0;
-  font-family: var(--font-mono), monospace;
-  font-size: 1.35rem;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-family: var(--font-sans), sans-serif;
+  font-size: 1.3rem;
   font-weight: 700;
-  color: var(--color-accent);
+  color: var(--color-fg);
 }
 
-.section-heading-prompt {
-  margin-right: 0.5em;
+.section-heading-divider {
+  height: 1px;
+  margin: 0;
+  border: none;
+  background: var(--color-border);
 }

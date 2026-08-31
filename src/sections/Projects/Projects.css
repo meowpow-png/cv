@@ -12,12 +12,6 @@
   gap: 1.25rem;
 }
 
-.projects-item-marker {
-  flex-shrink: 0;
-  width: 2px;
-  background: var(--color-accent);
-}
-
 .projects-item-header {
   display: flex;
   align-items: baseline;
@@ -27,7 +21,8 @@
 .projects-item-title {
   margin: 0;
   font-family: var(--font-sans), sans-serif;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .projects-item-body p {
