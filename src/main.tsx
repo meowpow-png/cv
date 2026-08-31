@@ -1,7 +1,7 @@
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { renderToStaticMarkup } from 'react-dom/server'
 
-import { App, cssPath as appCssPath } from '@/apps/default/App'
+import { App, cssPath as appCssPath } from '@/apps/generic/App'
 
 import { cssPath as educationCssPath } from '@/sections/Education'
 import { cssPath as footerCssPath } from '@/sections/Footer'

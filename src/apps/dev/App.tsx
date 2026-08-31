@@ -12,14 +12,20 @@ export function App() {
     <>
       <div className="app-content">
         <Hero content={hero} />
-        <Profile content={profile} />
-        <Skills content={skills} />
-        <Projects content={projects} />
-        <Education content={education} />
+        <div className="app-grid">
+          <aside className="app-sidebar">
+            <Skills content={skills} />
+            <Education content={education} />
+          </aside>
+          <main className="app-main">
+            <Profile content={profile} />
+            <Projects content={projects} />
+          </main>
+        </div>
         <Footer content={footer} />
       </div>
     </>
   )
 }
 
-export const cssPath = 'src/apps/default/App.css'
+export const cssPath = 'src/apps/dev/App.css'
