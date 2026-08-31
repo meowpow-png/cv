@@ -8,7 +8,7 @@ interface HeroLink {
 
 export interface HeroContent {
   name: string
-  title: string
+  title?: string
   links: HeroLink[]
 }
 
