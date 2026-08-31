@@ -1,5 +1,5 @@
 {
   "$schema": "https://unpkg.com/knip@6/schema.json",
   "entry": ["src/print.ts"],
-  "ignore": ["src/content/default/**/*.mdx"]
+  "ignore": ["src/content/default/**/*.mdx", "src/content/generic/**/*.mdx"]
 }

@@ -6,13 +6,11 @@
 ![React](https://img.shields.io/badge/React-3f444c?logo=react)
 ![Playwright](https://custom-icon-badges.demolab.com/badge/Playwright-2EAD33?logo=playwright&logoColor=fff)
 
-Reusable React components for building my CV, with different variants
-generated from the same components by swapping content and configuration.
+Reusable React components for building my CV, with different types generated from the same components.
 
 ## What you'll find
 
-MDX content rendered through React components to static HTML,
-then printed to PDF with Playwright. No client runtime, no web page.
+MDX content rendered through React components to static HTML, then printed to PDF with Playwright. No client runtime, no web page.
 
 Latest version of my CV available in [releases](https://github.com/meowpow-png/cv/releases/latest).
 
@@ -24,7 +22,7 @@ To get your environment ready:
 npm install
 ```
 
-To generate the CV in PDF format:
+To generate every CV type in PDF format:
 
 ```sh
 just pdf

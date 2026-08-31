@@ -1,3 +1,9 @@
 .section-content {
   padding: var(--section-content-padding) 0;
 }
+
+.section-content ul:not([class]) {
+  padding-left: 1.2rem;
+  font-size: var(--font-size-prose);
+  list-style-type: disc;
+}

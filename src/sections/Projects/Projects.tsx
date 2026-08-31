@@ -1,14 +1,19 @@
-import { projects } from '@/content/default'
 import { ArrowLink } from '@/shared/components/ArrowLink'
 import { SectionHeading } from '@/shared/components/SectionHeading'
 
-export function Projects() {
+import { type ProjectContent } from '@/shared/content-types'
+
+export interface ProjectsProps {
+  content: ProjectContent[]
+}
+
+export function Projects({ content }: ProjectsProps) {
   return (
     <section className="projects">
       <SectionHeading name="Projects" />
       <div className="section-content">
         <ol className="projects-list">
-          {projects.map(({ frontmatter, Description }) => (
+          {content.map(({ frontmatter, Description }) => (
             <li key={frontmatter.title} className="projects-item">
               <div className="projects-item-body">
                 <div className="projects-item-header">

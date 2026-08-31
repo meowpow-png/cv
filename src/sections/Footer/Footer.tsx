@@ -1,10 +1,15 @@
-import { footer } from '@/content/default'
 import { version } from '@/shared/version'
 
-export function Footer() {
+import { type FooterContent } from '@/shared/content-types'
+
+export interface FooterProps {
+  content: FooterContent
+}
+
+export function Footer({ content }: FooterProps) {
   return (
     <footer className="footer">
-      {footer.text} · {version}
+      {content.text} · {version}
     </footer>
   )
 }

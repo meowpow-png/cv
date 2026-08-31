@@ -1,18 +1,29 @@
-import { education } from '@/content/default'
 import { SectionHeading } from '@/shared/components/SectionHeading'
 
-export function Education() {
+import { type EducationContent } from '@/shared/content-types'
+
+export interface EducationProps {
+  heading?: string
+  courseworkLabel?: string
+  content: EducationContent
+}
+
+export function Education({
+  heading = 'Education',
+  courseworkLabel = 'Relevant Coursework',
+  content,
+}: EducationProps) {
   return (
     <section className="education">
-      <SectionHeading name="Education" />
+      <SectionHeading name={heading} />
       <div className="section-content">
         <div className="education-entry">
-          <h3 className="education-entry-degree">{education.degree}</h3>
+          <h3 className="education-entry-degree">{content.degree}</h3>
           <p className="education-entry-institution">
-            {education.institution}, {education.location}
+            {content.institution}, {content.location}
           </p>
           <p className="education-entry-coursework">
-            <strong>Relevant Coursework:</strong> {education.coursework.join(', ')}
+            <strong>{courseworkLabel}:</strong> {content.coursework.join(', ')}
           </p>
         </div>
       </div>

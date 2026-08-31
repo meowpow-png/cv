@@ -5,19 +5,21 @@ import { Profile } from '@/sections/Profile'
 import { Projects } from '@/sections/Projects'
 import { Skills } from '@/sections/Skills'
 
+import { education, footer, hero, profile, projects, skills } from '@/content/default'
+
 export function App() {
   return (
     <>
       <div className="app-content">
-        <Hero />
-        <Profile />
-        <Skills />
-        <Projects />
-        <Education />
-        <Footer />
+        <Hero content={hero} />
+        <Profile content={profile} />
+        <Skills content={skills} />
+        <Projects content={projects} />
+        <Education content={education} />
+        <Footer content={footer} />
       </div>
     </>
   )
 }
 
-export const cssPath = 'src/App.css'
+export const cssPath = 'src/apps/dev/App.css'

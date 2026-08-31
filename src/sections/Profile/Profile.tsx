@@ -1,10 +1,14 @@
-import { profile as ProfileContent } from '@/content/default'
+import { type ProfileContent } from '@/shared/content-types'
 
-export function Profile() {
+export interface ProfileProps {
+  content: ProfileContent
+}
+
+export function Profile({ content: Content }: ProfileProps) {
   return (
     <section className="profile">
       <div className="section-content">
-        <ProfileContent />
+        <Content />
       </div>
     </section>
   )

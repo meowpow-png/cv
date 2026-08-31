@@ -1,3 +1,5 @@
+import { type ComponentType } from 'react'
+
 interface HeroLink {
   type: string
   text: string
@@ -6,9 +8,11 @@ interface HeroLink {
 
 export interface HeroContent {
   name: string
-  title: string
+  title?: string
   links: HeroLink[]
 }
+
+export type ProfileContent = ComponentType
 
 export interface SkillsContent {
   languages: string[]
@@ -22,6 +26,22 @@ export interface ProjectFrontmatter {
   repo: string
   linkLabel: string
   stack: string[]
+}
+
+export interface ProjectContent {
+  frontmatter: ProjectFrontmatter
+  Description: ComponentType
+}
+
+export interface WorkExperienceFrontmatter {
+  role: string
+  company: string
+  period: string
+}
+
+export interface WorkExperienceEntry {
+  frontmatter: WorkExperienceFrontmatter
+  Description: ComponentType
 }
 
 export interface EducationContent {
